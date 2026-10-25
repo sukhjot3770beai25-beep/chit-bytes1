@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chit-Bytes | Log in</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <a href="home.html" class="logo">Chit<span>-Bytes</span></a>
+  <nav class="nav-links" style="margin-left:auto;">
+    <a href="home.html">Back to home</a>
+  </nav>
+</header>
+
+<div class="login-wrap">
+  <div class="login-image">
+    <div class="login-image-inner">
+      <img src="https://placehold.co/340x220/ffffff/e23744?text=Chit-Bytes" alt="Chit-Bytes">
+      <h2>Good food, delivered fast.</h2>
+      <p>Log in to order from your favourite restaurants and track deliveries in real time.</p>
+    </div>
+  </div>
+
+  <div class="login-form-box">
+    <!-- novalidate = let OUR JavaScript (js/login.js) check the form -->
+    <form id="loginForm" novalidate>
+      <h1>Log in</h1>
+      <p class="sub">Welcome back to Chit-Bytes</p>
+
+      <!-- Error / success message appears here -->
+      <div id="msgBox" class="msg-box"></div>
+
+      <div class="form-group">
+        <label for="email">Email or phone number</label>
+        <input type="text" id="email" name="email" placeholder="you@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="password-wrap">
+          <input type="password" id="password" name="password" placeholder="••••••••">
+          <button type="button" class="eye-btn" id="eyeBtn" onclick="togglePassword()">👁️</button>
+        </div>
+      </div>
+
+      <button type="submit" class="login-submit">Log in</button>
+
+      <p class="form-toggle">New to Chit-Bytes? <a href="signup.html">Create an account</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

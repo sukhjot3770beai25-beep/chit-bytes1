@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chit-Bytes | Track your order</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <a href="home.html" class="logo">Chit<span>-Bytes</span></a>
+  <div class="location-box">📍 Patiala, Punjab</div>
+  <nav class="nav-links" style="margin-left:auto;">
+    <a href="home.html">Home</a>
+    <a href="cart.html">🛒 Cart</a>
+    <a href="signup.html" class="btn-signup">Sign Up</a>
+  </nav>
+</header>
+
+<!-- JavaScript (js/track.js) moves this page forward using a PROMISE chain -->
+<section class="track-page">
+  <h1 id="trackTitle">Finding your order...</h1>
+  <p class="eta" id="eta">Please wait</p>
+  <a href="home.html" class="go-home-btn" id="goHome">Order some food</a>
+
+  <div class="progress-track" id="progress">
+    <div class="progress-fill" id="fill"></div>
+    <div class="progress-step" id="step1">
+      <div class="dot">1</div>
+      <p>Order Placed</p>
+    </div>
+    <div class="progress-step" id="step2">
+      <div class="dot">2</div>
+      <p>Preparing Food</p>
+    </div>
+    <div class="progress-step" id="step3">
+      <div class="dot">3</div>
+      <p>Out for Delivery</p>
+    </div>
+    <div class="progress-step" id="step4">
+      <div class="dot">4</div>
+      <p>Delivered</p>
+    </div>
+  </div>
+
+  <!-- Rider shows up only at step 3 -->
+  <div class="rider-card" id="rider" style="display:none;">
+    <img src="https://placehold.co/100x100/e23744/ffffff?text=🛵" alt="Delivery partner">
+    <div>
+      <h4>Gagan is your delivery partner</h4>
+      <p>Contact: +91 98xxxxxx21 · Vehicle: Bike PB-11</p>
+    </div>
+  </div>
+
+  <div class="track-order-summary" id="summary"></div>
+</section>
+
+<script src="js/common.js"></script>
+<script src="js/track.js"></script>
+</body>
+</html>

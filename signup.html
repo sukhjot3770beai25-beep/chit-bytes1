@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chit-Bytes | Create account</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <a href="home.html" class="logo">Chit<span>-Bytes</span></a>
+  <nav class="nav-links" style="margin-left:auto;">
+    <a href="home.html">Back to home</a>
+  </nav>
+</header>
+
+<div class="login-wrap">
+  <div class="login-image">
+    <div class="login-image-inner">
+      <img src="https://placehold.co/340x220/ffffff/e23744?text=Chit-Bytes" alt="Chit-Bytes">
+      <h2>Join Chit-Bytes today.</h2>
+      <p>Create an account to order food from the best restaurants in Patiala.</p>
+    </div>
+  </div>
+
+  <div class="login-form-box">
+    <!-- novalidate = let OUR JavaScript (js/signup.js) check the form -->
+    <form id="signupForm" novalidate>
+      <h1>Create account</h1>
+      <p class="sub">It takes less than a minute</p>
+
+      <!-- Error / success message appears here -->
+      <div id="msgBox" class="msg-box"></div>
+
+      <div class="form-group">
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" placeholder="Your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="you@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="password-wrap">
+          <input type="password" id="password" placeholder="At least 6 characters">
+          <button type="button" class="eye-btn" id="eyeBtn" onclick="togglePassword()">👁️</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password2">Retype password</label>
+        <input type="password" id="password2" placeholder="Same password again">
+      </div>
+
+      <button type="submit" class="login-submit">Create account</button>
+
+      <p class="form-toggle">Already have an account? <a href="login.html">Log in</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/signup.js"></script>
+</body>
+</html>
